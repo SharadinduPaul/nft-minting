@@ -1,0 +1,98 @@
+.home-main {
+  background: linear-gradient(120deg, #4b6cb7 0%, #182848 100%);
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+.home-form {
+  --border_color: rgba(236, 245, 255, 0.3);
+  --border_rad: 0.2rem;
+  --button_bg: rgba(17, 41, 85, 0.9);
+
+  padding: 1.5rem 1rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-right: 1px solid var(--border_color);
+  border-bottom: 2px solid var(--border_color);
+  backdrop-filter: blur(20px);
+
+  max-width: 440px;
+  width: 100%;
+  min-height: 500px;
+  border-radius: 0.4rem;
+
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+}
+.home-form > input {
+  font-size: 0.9rem;
+  font-weight: 400;
+  border: none;
+  outline: none;
+  padding: 0 0.6rem;
+  height: 2.25rem;
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: var(--border_rad);
+  width: 100%;
+  transition: 0.2s;
+}
+.home-form > input:focus {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.home-form > h3 {
+  font-size: 1.6rem;
+  font-weight: 200;
+  text-align: center;
+  color: white;
+  font-style: italic;
+}
+.home-form > button {
+  height: 2.5rem;
+  width: 100%;
+  max-width: 200px;
+  background-color: var(--button_bg);
+  color: white;
+  border-radius: var(--border_rad);
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  border-top: 1px solid #0000;
+  border-left: 1px solid #0000;
+  transition: 0.4s;
+  position: relative;
+  overflow: hidden;
+}
+.home-form > button > p {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: 0.6s;
+}
+.home-form > button > p > img {
+  height: 50%;
+  margin-left: 0.6rem;
+}
+.home-form > button > p:first-of-type {
+  transition-timing-function: ease-in;
+}
+.home-form > button > p:last-of-type {
+  transition-timing-function: ease-out;
+}
+.home-form > button:hover {
+  border-top: 1px solid var(--border_color);
+  border-left: 1px solid var(--border_color);
+  box-shadow: 3px 2px 6px rgba(0, 0, 0, 0.3);
+}
