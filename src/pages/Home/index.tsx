@@ -47,6 +47,8 @@ export const Home = () => {
         setWalletAddress(account);
 
         contract = new web3.eth.Contract(ABI, ADDRESS);
+      } else {
+        alert("Please sign in to your metamask account first");
       }
     } catch (e) {
       console.log("error:", e);
