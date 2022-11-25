@@ -7,6 +7,7 @@
   align-items: center;
   flex-direction: column;
   position: relative;
+  padding: 1rem;
 }
 .home-form {
   --border_color: rgba(236, 245, 255, 0.3);
